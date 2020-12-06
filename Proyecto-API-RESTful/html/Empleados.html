@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- JS-->
+  <script src="../js/jquery.js"></script>
+  <script src="../js/prettyPrint.js"></script>
+  <script src="../js/faker.js"></script>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/estilos.css">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Proyecto API RESTful-19307023-4-1</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Generar Datos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Profesores.html">Profesores</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="Alumnos.html">Alumnos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="Empleados.html">Empleados</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <title>Empleados</title>
+</head>
+<body>
+  <div class="container main">
+    <div class="row">
+      <div class="col-sm-8 offset-md-2">
+      <div class="card animate">
+        <div class="card-header text-light text-center">
+          <h3>Generar Datos de Empleados</h3>
+        </div>
+        <div class="card-body">
+          <form action="../php/conection3.php" method="POST">
+          <div class="form-group">
+            <div class="row">
+              <div class="col">
+                <label for="clave">Clave Empleado</label>
+                <input type="text" id="clave" name="clave" class="form-control" placeholder="Clave Empleado">
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="nombre">Nombre completo</label>
+                  <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre Completo">
+                </div>
+              </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+            <div class="col">
+              <label for="FormControlInput1">Email</label>
+              <input type="email" class="form-control" placeholder="Email" name="email" id="email" autofocus>
+            </div>
+            <div class="col">
+              <div class="form-group">
+              <label for="FormControlInput1">N° Telefonico</label>
+              <input type="text" class="form-control" placeholder="Teléfono" name="telefono" id="telefono" autofocus>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+            <div class="col">
+              <label for="FormControlInput1">Fecha de Nacimiento</label>
+              <input type="" class="form-control" placeholder="Fecha de Nacimiento" name="fecha" id="fecha_nacimiento" autofocus>
+            </div>
+            <div class="col">
+              <div class="form-group">
+              <label for="FormControlInput1">Lugar de Nacimiento</label>
+              <input type="text" class="form-control" placeholder="Lugar de Nacimiento" id="lugar_nacimiento" name="lugar" autofocus>
+                
+              </div>
+            </div>
+          </div>
+        <div class="form-group">
+        <label for="FormControlInput1">Dirección</label>
+        <input type="text" id="direccion" name="direccion" class="form-control" placeholder="Direccion">
+        </div>
+        <div class="form-group">
+        <div class="row">
+          <div class="col">
+            <label for="puesto" >Puesto</label>
+            <input type="text" id="puesto" name="puesto" class="form-control" placeholder="Puesto">
+          </div>
+          <div class="col">
+            <div class="form-group">
+            <label for="vehiculo_serie">N° de Serie</label>
+          <input type="text" id="vehiculo_serie" name="vehiculo_serie" class="form-control" placeholder="N° Serie">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="form-group">
+        <div class="row">
+          <div class="col">
+            <label for="vehiculo_marca">Marca del Vehículo</label>
+            <input type="text" id="vehiculo_marca" name="vehiculo_marca" class="form-control" placeholder="Marca de Vehiculo">
+          </div>
+          <div class="col">
+            <div class="form-group">
+            <label for="vehiculo_color" class="col-12 col-form-label">Color</label>
+            <input type="text" id="vehiculo_color" name="vehiculo_color" class="form-control" placeholder="Color de Vehiculo">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="form-group text-center">
+        <button type="button" id="generar" class="btn btn-outline-primary">Generar Datos</button>
+        <button type="submit" type="button" class="btn btn-outline-success">Guardar Datos</button>
+        <a href="../php/ver3.php" type="button" class="btn btn-outline-warning">Ver tabla</a>
+      </div>
+      </form>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <span class="list-inline text-center">Emanuel Mendez Corona Copyright &copy; 2020</span>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      
+      function generate() {
+        faker.locale = 'es_MX' ;
+
+        var firstName = faker.name.firstName();
+          lastName = faker.name.lastName();
+        var Fech_nac = faker.date.past(50, new Date());
+          Fech_nac =Fech_nac.getDate() + '-' + (Fech_nac.getMonth() + 1) + '-' + Fech_nac.getFullYear();
+
+        faker.locale = 'es_MX' ;
+        $('#clave').val(faker.finance.routingNumber());
+        $('#nombre').val(faker.name.findName(firstName,lastName));
+        $('#telefono').val(faker.phone.phoneNumber());
+        $('#fecha_nacimiento').val(Fech_nac);
+        $('#lugar_nacimiento').val(faker.address.state());
+        $('#email').val(faker.internet.email(firstName,lastName));
+        $('#direccion').val(faker.address.streetAddress());
+        $('#puesto').val(faker.name.jobDescriptor());
+        var vehiculo = faker.vehicle.manufacturer();
+        $('#vehiculo_marca').val(vehiculo);
+        $('#vehiculo_serie').val(faker.vehicle.vin(vehiculo));
+        $('#vehiculo_color').val(faker.vehicle.color(vehiculo));
+      }
+
+      $('#generar').click(function() {
+        generate();
+      });
+
+    });
+  </script>
+</body>
+</html>

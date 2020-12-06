@@ -1,0 +1,33 @@
+html{
+	position: relative;
+	min-height: 100%;
+}
+body{
+	margin-bottom: 60px;
+	background-image: url(../img/bg.jpg);
+	background-size: 410px 240px;
+	background-position: center;
+	background-repeat: repeat; 
+	background-attachment: fixed;
+}
+.footer{
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color:#0051a9;
+}
+body > .container{
+	padding: 60px 15px 0;
+}
+.footer > .container{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.card-header{
+	background-color: #1f8cf1;
+	margin-bottom: 10px;
+}
